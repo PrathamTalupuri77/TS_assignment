@@ -12,3 +12,7 @@ function calculateArea(shape: ShapeType, width?: number, height?: number, radius
         throw new Error("Invalid parameters ");
     }
 }
+
+console.log (calculateArea("circle",0,0,4));
+console.log (calculateArea("rectangle",10,5));
+console.log (calculateArea("triangle",10,5));
