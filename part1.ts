@@ -16,3 +16,18 @@ function calculateArea(shape: ShapeType, width?: number, height?: number, radius
 console.log (calculateArea("circle",0,0,4));
 console.log (calculateArea("rectangle",10,5));
 console.log (calculateArea("triangle",10,5));
+
+type User = {
+    id: number;
+    name: string;
+    email: string;
+    isAdmin?: boolean;
+};
+
+
+function createUser(user: User): void {
+    console.log(`User Created: ${user.name}, Email: ${user.email}, Admin: ${user.isAdmin ?? false}`);
+}
+
+
+createUser({ id: 1, name: "Alice", email: "alice@example.com" }); 
