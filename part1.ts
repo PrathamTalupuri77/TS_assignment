@@ -9,6 +9,6 @@ function calculateArea(shape: ShapeType, width?: number, height?: number, radius
     } else if (shape === "circle" && radius !== undefined) {
         return Math.PI * radius * radius;
     } else {
-        throw new Error("Invalid parameters for the given shape.");
+        throw new Error("Invalid parameters ");
     }
 }
